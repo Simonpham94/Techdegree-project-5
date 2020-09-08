@@ -1,0 +1,73 @@
+//====== BASE STYLE =====//
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0 auto; 
+    padding: 0; 
+
+}
+
+//====== Nav + footer =====//
+
+nav {
+    h1{
+        text-align: center;
+        color: #fff;
+        margin-top: 0;
+        background-color:  #6C5B7B;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid;
+    }
+}
+
+
+footer{
+    
+    h5{
+        text-align: center;
+        color: #fff;
+        background-color: #355C7D;
+        padding-bottom: 40px;
+        padding-top: 40px; 
+    }
+}
+
+//====== Main =====//
+.wrap-box-search{
+    text-align: center;
+
+}
+
+.box-search {
+    text-align: center;
+    width: 50%;
+    height: 40px;
+    border: 2px solid #C06C84;
+    border-radius: 5px;
+    &:focus {
+        border-style: none;
+    }
+}
+
+main {
+    
+    margin: auto;
+    min-height: 100%;
+    
+}
+
+.wrap-gallery {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    max-width: 60%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    grid-gap: 15px;
+}
