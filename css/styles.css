@@ -389,6 +389,7 @@ main {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  justify-items: center;
   display: grid;
   max-width: 60%;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
