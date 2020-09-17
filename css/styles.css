@@ -343,7 +343,9 @@ template {
 
 body {
   font-family: "Lora", serif;
-  margin: 0 auto;
+  margin-top: -20px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
   padding: 0;
 }
 
@@ -363,6 +365,7 @@ footer h5 {
   background-color: #355C7D;
   padding-bottom: 40px;
   padding-top: 40px;
+  margin-bottom: 0;
 }
 
 .wrap-box-search {
@@ -386,7 +389,8 @@ main {
 }
 
 .wrap-gallery {
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 90px;
   margin-left: auto;
   margin-right: auto;
   justify-items: center;
