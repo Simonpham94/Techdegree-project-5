@@ -343,40 +343,61 @@ template {
 
 body {
   font-family: "Lora", serif;
-  margin-top: -20px;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  margin: 0 auto;
   padding: 0;
 }
 
+nav {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  height: 100px;
+  background-color: #6c5b7b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 nav h1 {
   text-align: center;
   color: #fff;
-  margin-top: 0;
-  background-color: #6C5B7B;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid;
+  margin: 0;
 }
 
-footer h5 {
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #355c7d;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer h4 {
   text-align: center;
   color: #fff;
-  background-color: #355C7D;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .wrap-box-search {
   text-align: center;
+  margin-top: 20px;
+}
+
+.wrap-box-search,
+.wrap-gallery {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10%;
 }
 
 .box-search {
   text-align: center;
-  width: 50%;
+  width: 100%;
   height: 40px;
-  border: 2px solid #C06C84;
+  border: 2px solid #c06c84;
   border-radius: 5px;
 }
 .box-search:focus {
@@ -385,7 +406,9 @@ footer h5 {
 
 main {
   margin: auto;
-  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .wrap-gallery {
@@ -395,10 +418,15 @@ main {
   margin-right: auto;
   justify-items: center;
   display: grid;
-  max-width: 60%;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: 200px;
-  row-gap: 20px;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    position: relative;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
